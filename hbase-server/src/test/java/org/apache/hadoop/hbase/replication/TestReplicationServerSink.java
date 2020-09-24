@@ -59,13 +59,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Category({ReplicationTests.class, MediumTests.class})
-public class TestReplicationServer {
+public class TestReplicationServerSink {
 
   @ClassRule
   public static final HBaseClassTestRule CLASS_RULE =
-      HBaseClassTestRule.forClass(TestReplicationServer.class);
+      HBaseClassTestRule.forClass(TestReplicationServerSink.class);
 
-  private static final Logger LOG = LoggerFactory.getLogger(TestReplicationServer.class);
+  private static final Logger LOG = LoggerFactory.getLogger(TestReplicationServerSink.class);
 
   private static final HBaseTestingUtility TEST_UTIL = new HBaseTestingUtility();
 
